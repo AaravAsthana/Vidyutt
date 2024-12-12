@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontend/src/styles/styles.css">
+    <title>Vidyutt Dashboard</title>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Vidyutt Logo" class="logo">
+        </div>
+        <h1>Dashboard</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Input Section -->
+            <section class="input-section">
+                <h2>📅 Store Date</h2>
+                <p>Select a date to store in the database:</p>
+                <input type="date" id="dateInput">
+                <button onclick="storeDate()">✅ Store Date</button>
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-section">
+                <h2>🔮 Model Predictions</h2>
+                <p>Retrieve predictions from the database:</p>
+                <button onclick="fetchPredictions()">📥 Get Predictions</button>
+            </section>
+        </div>
+
+       <!-- Dynamic Content Area -->
+<div class="dynamic-content hidden">
+    <div class="graph-container">
+        <h2>Predictions Graph</h2>
+        <canvas id="predictionGraph"></canvas>
+    </div>
+    <br><br>
+    <h2>Predictions Table</h2>
+    <div class="prediction-table">
+        <table id="predictionsTable">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Predictions</th>
+                    <th>Actual Values</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div class="summary-table">
+        <table id="summaryTable">
+            <!-- Table will be added dynamically -->
+        </table>
+    </div>
+</div>
+    </main>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+   
+    
+</body>
+</html>

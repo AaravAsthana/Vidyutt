@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #a6c0fe, #f68084);
+    color: #fff;
+    text-align: center;
+    overflow-y: auto;
+}
+
+h1, h2 {
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #79c9cf;
+    padding: 30px 50px;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    transition: all 0s ease;
+}
+
+/*.container.shift-left {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 5%;
+    transform: scale(0.9);
+}/*
+
+/* Section Styles */
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    transition: all 0s ease;
+}
+
+/*.container.shift-left section {
+    max-width: 200px;
+    padding: 15px;
+}
+
+/* Button Styles */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Dynamic Content Area */
+.dynamic-content {
+    display: none;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: all 0.5s ease;
+}
+
+.dynamic-content.visible {
+    display: block;
+}
+
+.graph-container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#predictionsTable {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#predictionsTable th, #predictionsTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+#predictionsTable th {
+    background-color: #333;
+    color: #fff;
+}
+
+.summary-table {
+    margin-top: 20px;
+}
+
+#summaryTable {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#summaryTable th, #summaryTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+#summaryTable th {
+    background-color: #333;
+    color: #fff;
+}
+
